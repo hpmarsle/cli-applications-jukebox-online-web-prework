@@ -89,6 +89,5 @@ def run (songs)
       break
     end
     puts "Please enter a command:"
-    # action = gets.strip
   end
 end
