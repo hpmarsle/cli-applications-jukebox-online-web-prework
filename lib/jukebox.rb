@@ -41,7 +41,6 @@ def play (songs)
       puts "Invalid input, please try again"
     end
     puts "Please enter a song name or number:"
-    # choice = gets.strip
   end 
   
 end 
