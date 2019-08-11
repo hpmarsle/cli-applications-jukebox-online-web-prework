@@ -19,7 +19,7 @@ def help
   puts "- exit : exits this program"
 end
 
-def play (songs)
+def play(songs)
   menu = {}
   
   songs.each_with_index do |song_name, i| 
@@ -28,20 +28,18 @@ def play (songs)
   
   puts "Please enter a song name or number:"
   
-  while choice = gets.strip
-    if menu.has_key?(choice.to_i) 
-      song_name = menu[choice.to_i]
-      puts "Playing #{song_name}"
-      break
-    elsif menu.has_value?(choice)
-      song_name = choice
-      puts "Playing #{song_name}"
-      break
-    else
-      puts "Invalid input, please try again"
-    end
-    puts "Please enter a song name or number:"
-  end 
+  choice = gets.strip
+  
+  if menu.has_key?(choice.to_i) 
+    song_name = menu[choice.to_i]
+    puts "Playing #{song_name}"
+  elsif menu.has_value?(choice)
+    song_name = choice
+    puts "Playing #{song_name}"
+  else
+    puts "Invalid input, please try again"
+  end
+
 end 
  
 
