@@ -52,7 +52,6 @@ def exit_jukebox
 end
 
 def run (songs)
-  # help
   puts "Please enter a command:"
   # # **version 1 **
   # while action = gets.strip
