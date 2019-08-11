@@ -39,6 +39,7 @@ def play (songs)
       break
     else
       puts "Invalid input, please try again"
+      break
     end
     puts "Please enter a song name or number:"
   end 
