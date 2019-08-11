@@ -36,7 +36,6 @@ def play (songs)
     elsif menu.has_value?(choice)
       song_name = choice
       puts "Playing #{song_name}"
-      break
     else
       puts "Invalid input, please try again"
     end
