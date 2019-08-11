@@ -27,31 +27,21 @@ def play (songs)
   end
   
   puts "Please enter a song name or number:"
-  choice = gets.strip
-  while choice != gets.strip
+  
+  while choice = gets.strip
     if menu.has_key?(choice.to_i) 
       song_name = menu[choice.to_i]
       puts "Playing #{song_name}"
-      choice
-      # break
+      break
     elsif menu.has_value?(choice)
       song_name = choice
       puts "Playing #{song_name}"
-      choice
-      # break
+      break
     else
       puts "Invalid input, please try again"
     end
     puts "Please enter a song name or number:"
   end 
-  # returns an error when given a number that does not correspond to a song' do
-  #       allow(self).to receive(:gets).and_return("12323")
-  #       expect( $stdout ).to receive(:puts).with(/Please enter a song name or number:/)
-  #       expect( $stdout ).to receive(:puts).with(/Invalid input, please try again/)
-  #       play(songs)
-  #     end
-
-  #     it 'returns an error when given a name that does not correspond to an existing song' do
 end 
  
 
