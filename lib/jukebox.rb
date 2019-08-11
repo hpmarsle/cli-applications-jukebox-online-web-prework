@@ -79,7 +79,6 @@ def run (songs)
       case action
       when "list"
         list(songs)
-        break
       when "play"
         play(songs)
       when "help"
@@ -89,6 +88,7 @@ def run (songs)
       exit_jukebox
       break
     end
+    puts "Please enter a command:"
     action = gets.strip
   end
 end
