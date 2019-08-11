@@ -42,7 +42,14 @@ def play (songs)
     end
     puts "Please enter a song name or number:"
   end 
-  
+  # returns an error when given a number that does not correspond to a song' do
+  #       allow(self).to receive(:gets).and_return("12323")
+  #       expect( $stdout ).to receive(:puts).with(/Please enter a song name or number:/)
+  #       expect( $stdout ).to receive(:puts).with(/Invalid input, please try again/)
+  #       play(songs)
+  #     end
+
+  #     it 'returns an error when given a name that does not correspond to an existing song' do
 end 
  
 
