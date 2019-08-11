@@ -28,7 +28,7 @@ def play (songs)
   
   puts "Please enter a song name or number:"
   
-  while choice = gets.strip
+  while choice != gets.strip
     if menu.has_key?(choice.to_i) 
       song_name = menu[choice.to_i]
       puts "Playing #{song_name}"
