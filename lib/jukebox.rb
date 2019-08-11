@@ -32,7 +32,6 @@ def play (songs)
     if menu.has_key?(choice.to_i) 
       song_name = menu[choice.to_i]
       puts "Playing #{song_name}"
-      break
     elsif menu.has_value?(choice)
       song_name = choice
       puts "Playing #{song_name}"
