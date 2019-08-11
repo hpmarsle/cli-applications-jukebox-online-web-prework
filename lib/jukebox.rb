@@ -79,6 +79,7 @@ def run (songs)
       case action
       when "list"
         list(songs)
+        break
       when "play"
         play(songs)
       when "help"
