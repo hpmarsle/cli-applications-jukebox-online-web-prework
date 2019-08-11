@@ -84,10 +84,11 @@ def run (songs)
       when "help"
         help
       end
+      action = gets.strip
     else
       exit_jukebox
       break
     end
-    action = gets.strip
+    # action = gets.strip
   end
 end
