@@ -53,23 +53,6 @@ end
 
 def run (songs)
   puts "Please enter a command:"
-  # # **version 1 **
-  # while action = gets.strip
-  #   if action == "exit"
-  #     exit_jukebox
-  #     break
-  #   elsif action == "list"
-  #     list(songs)
-  #   elsif action == "play"
-  #     play(songs)
-  #   elsif action == "help"
-  #     help
-  #   else
-  #     puts "Please enter a valid choice."
-  #   end
-  #   action = gets.strip
-  # end
-    # **version 2 **
   while action = gets.strip
     unless action == "exit"
       case action
@@ -86,4 +69,20 @@ def run (songs)
     end
     puts "Please enter a command:"
   end
+    # # **version 2 **
+  # while action = gets.strip
+  #   if action == "exit"
+  #     exit_jukebox
+  #     break
+  #   elsif action == "list"
+  #     list(songs)
+  #   elsif action == "play"
+  #     play(songs)
+  #   elsif action == "help"
+  #     help
+  #   else
+  #     puts "Please enter a valid choice."
+  #   end
+  #   action = gets.strip
+  # end
 end
